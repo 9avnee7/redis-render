@@ -1,2 +1,3 @@
 FROM redis:latest
-CMD ["redis-server", "--appendonly", "yes"]
+EXPOSE 6379
+CMD ["redis-server", "--protected-mode no"]
